@@ -6,11 +6,11 @@ The purpose of the assessment is to evaluate that the candidate has the fundamen
 1. Done
 2. Done
 3.  To run, `Install the Python Requests library: ***pip install requests***`
-	3.1. *See repository on:*
-	3.2. 	See images under folder `../sampleImages(INPUT_OUTPUT)/` 
-4. *See file on repository: EnterSektOMDBTestCases_Zukile.pdf*
-5. *See file on repository:*
-	5.1. See images under folder `../sampleImages(INPUT_OUTPUT)/` 
+	3.1. *See file on repository: [OMDB_GETID.py](https://github.com/sirzuks/OMDBGETBYIDREPO/blob/master/OMDB_GETID.py)*
+	3.2. 	See images under folder [`../sampleImages(INPUT_OUTPUT)/`](https://github.com/sirzuks/OMDBGETBYIDREPO/tree/master/sampleImages%28INPUT_OUTPUT%29) 
+4. *See file on repository: [EnterSektOMDBTestCases_Zukile.pdf](https://github.com/sirzuks/OMDBGETBYIDREPO/blob/master/EnterSektOMDBTestCases_Zukile.pdf)*
+5. *See file on repository: [OMDBTESTS.postman_collection.json](https://github.com/sirzuks/OMDBGETBYIDREPO/blob/master/OMDBTESTS.postman_collection.json)*
+	5.1. See images: [TESTS](https://github.com/sirzuks/OMDBGETBYIDREPO/blob/master/sampleImages%28INPUT_OUTPUT%29/Tests.png), [TestResults](https://github.com/sirzuks/OMDBGETBYIDREPO/blob/master/sampleImages%28INPUT_OUTPUT%29/TestResults.png), [OMDB Test Runner](https://github.com/sirzuks/OMDBGETBYIDREPO/blob/master/sampleImages%28INPUT_OUTPUT%29/OMDB%20Test%20Runner.png) 
 
 
 ## **Theoretical Exercise**
@@ -40,9 +40,10 @@ Functional tests
 
 The most effective time to involve a software quality engineer would be as early in the project as possible (requirements phase). Many companies do not involve QA until after design and requirements have been set. Because of this, many issues that could have been identified prior to development are not found until much later in the project and often cause redesigns mid project, sub-optimal quality, or even caveats for a release, all of which cause stress, lower morale and ultimately your user’s experience to suffer.
 
+
 **5\. For the practical exercise, what percentage of automation vs manual testing would be ideal?**
 
-*For the given task, it makes sense to only cover about %. That list includes:*
+*For the given task, it makes sense to only cover ~60%. That list includes:*
 
  - Checking for successful GET request
  - Checking for failed GET request upon omission of a parameter
@@ -55,4 +56,3 @@ The most effective time to involve a software quality engineer would be as early
  - When *i* parameter is not valid
  - When *apikey* parameter is not valid
  - When searching for other / multiple ID's (not part of requirement so to automate for *one* search adds no value)
- - 

@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "b5b23e06-3882-4821-9c4f-3b3bdec457b0",
+		"name": "OMDB TESTS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "OMDB GETBY ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "26d933b7-ec65-4dbc-af6d-0d2d62e8d19a",
+						"type": "text/javascript",
+						"exec": [
+							"",
+							"//TEST 1",
+							"pm.test(\"Successful GET request (Response one of [200,201,202])\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,201,202]);",
+							"});",
+							"",
+							"",
+							"// RUN THIS ONE WITHOUT API KEY OR ID PARAMETER -- With both PARAMS, it should FAIL",
+							"// TEST 2",
+							"pm.test(\"FAILED GET request (Response one of [400,401,404])\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([400,401,404]);",
+							"});",
+							"",
+							"",
+							"//TESTING FOR Response Time (Should be less than 1001ms for acceptable request time)",
+							"//TEST 3",
+							"tests[\"Response time is acceptable (Server response time less than 500ms)\"] = _.inRange(responseTime, 100, 500);",
+							"",
+							"",
+							"// Assert that the status code is 200",
+							"//TEST 4",
+							"pm.test(\"Response is valid && has a body\", function () {",
+							"     pm.response.to.be.ok; // info, success, redirection, clientError,  serverError, are other variants",
+							"     // assert that the response has a valid JSON body",
+							"     pm.response.to.be.withBody;",
+							"     pm.response.to.be.json; // this assertion also checks if a body  exists, so the above check is not needed",
+							"});",
+							"",
+							"//TESTING FOR CORRECT MOVIE RETURNED",
+							"// TEST 5",
+							"tests[\"JSon Response contains Movie we are looking for [Thor: Ragnarok]\"] = responseBody.has(\"Thor: Ragnarok\");",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://www.omdbapi.com/?i=tt3501632&apikey=4f05a448",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "i",
+							"value": "tt3501632",
+							"description": "A valid IMDb ID for THOR : RAGNAROK"
+						},
+						{
+							"key": "apikey",
+							"value": "API_KEY_HERE",
+							"description": "Zukile API KEY"
+						}
+					]
+				},
+				"description": "Query the OMDB API for the film “Thor: Ragnarok” using only the api key and the “i” parameter in your query string"
+			},
+			"response": []
+		}
+	]
+}

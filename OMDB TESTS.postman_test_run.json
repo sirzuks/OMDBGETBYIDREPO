@@ -1,0 +1,138 @@
+{
+	"id": "9d4af33f-0f18-4acf-8bd6-590e3e248cf1",
+	"name": "OMDB TESTS",
+	"allTests": [],
+	"timestamp": "2018-03-25T15:34:17.843Z",
+	"collection_id": "b5b23e06-3882-4821-9c4f-3b3bdec457b0",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "b5b23e06-3882-4821-9c4f-3b3bdec457b0",
+		"name": "OMDB TESTS",
+		"description": null,
+		"auth": null,
+		"events": null,
+		"variables": null,
+		"order": [
+			"19034240-801a-4bc9-b2be-ff410b7aa37f"
+		],
+		"folders_order": [],
+		"owner": "3977834",
+		"permissions": {},
+		"favorite": false,
+		"shared": false,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "OMDB GETBY ID",
+			"id": "19034240-801a-4bc9-b2be-ff410b7aa37f",
+			"url": "http://www.omdbapi.com/?i=tt3501632&apikey=APIKEYHERE",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Successful GET request (Response one of [200,201,202])",
+				"status": "pass",
+				"FAILED GET request (Response one of [400,401,404])": false,
+				"Response is valid && has a body": true,
+				"Response time is acceptable (Server response time less than 500ms)": true,
+				"JSon Response contains Movie we are looking for [Thor: Ragnarok]": true
+			},
+			"testPassFailCounts": {
+				"Successful GET request (Response one of [200,201,202])": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FAILED GET request (Response one of [400,401,404])": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response is valid && has a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is acceptable (Server response time less than 500ms)": {
+					"pass": 1,
+					"fail": 0
+				},
+				"JSon Response contains Movie we are looking for [Thor: Ragnarok]": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"209"
+			],
+			"allTests": [
+				{
+					"Successful GET request (Response one of [200,201,202])": true,
+					"FAILED GET request (Response one of [400,401,404])": false,
+					"Response is valid && has a body": true,
+					"Response time is acceptable (Server response time less than 500ms)": true,
+					"JSon Response contains Movie we are looking for [Thor: Ragnarok]": true
+				}
+			],
+			"time": "209",
+			"totalRequestTime": "209",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 4,
+	"totalFail": 1,
+	"totalTime": 209,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "OMDB GETBY ID",
+			"id": "19034240-801a-4bc9-b2be-ff410b7aa37f",
+			"url": "http://www.omdbapi.com/?i=tt3501632&apikey=APIKEYHERE",
+			"time": "2018-03-25T15:34:17.843Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Successful GET request (Response one of [200,201,202])": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FAILED GET request (Response one of [400,401,404])": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response is valid && has a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is acceptable (Server response time less than 500ms)": {
+					"pass": 1,
+					"fail": 0
+				},
+				"JSon Response contains Movie we are looking for [Thor: Ragnarok]": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}

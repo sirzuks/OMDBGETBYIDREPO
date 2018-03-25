@@ -11,6 +11,8 @@ The purpose of the assessment is to evaluate that the candidate has the fundamen
 4. *See file on repository: [EnterSektOMDBTestCases_Zukile.pdf](https://github.com/sirzuks/OMDBGETBYIDREPO/blob/master/EnterSektOMDBTestCases_Zukile.pdf)*
 5. *See file on repository: [OMDBTESTS.postman_collection.json](https://github.com/sirzuks/OMDBGETBYIDREPO/blob/master/OMDBTESTS.postman_collection.json)*
 	5.1. See images: [TESTS](https://github.com/sirzuks/OMDBGETBYIDREPO/blob/master/sampleImages%28INPUT_OUTPUT%29/Tests.png), [TestResults](https://github.com/sirzuks/OMDBGETBYIDREPO/blob/master/sampleImages%28INPUT_OUTPUT%29/TestResults.png), [OMDB Test Runner](https://github.com/sirzuks/OMDBGETBYIDREPO/blob/master/sampleImages%28INPUT_OUTPUT%29/OMDB%20Test%20Runner.png) 
+
+
 `Note: These are POSTMAN tests. Import the OMDBTESTS.postman_collection.json on PostMan App and you will be able to run tests || Also see images attached for previous runs`
 
 ## **Theoretical Exercise**
